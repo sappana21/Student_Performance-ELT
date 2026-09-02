@@ -9,10 +9,6 @@
 │   Bronze      ───▶    Silver      ───▶             Gold               
 │ (Raw Ingest)        (Cleaned)             (Business Aggregates)        
 └─────────────┘      └─────────────┘      └──────────────────────────────┘
-    bronzeS              silverS            studentsdoinparttimejob
-  (CSV → Delta,       (dedup, null-        avg_study_time_hours
-   Autoloader)         filtered on          parentseducation
-                        student_id)
 ```
 
 | Layer | Table(s) | Purpose |
@@ -24,14 +20,12 @@
 ---
 
 ##  Bronze Layer — Raw Ingestion
-
-Ingests raw student performance CSV data via Databricks Autoloader, tagging each record with an ingestion timestamp.
 ---
 
 ##  Silver Layer — Cleaning
-
+---
 ## Gold Layer — Business Aggregations
-
+---
 ## ▶️ How to Run
 
 1. Upload pipeline notebooks/files to a Databricks Repo.
