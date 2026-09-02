@@ -1,6 +1,6 @@
-#  student-performance-dlt-pipeline
+#  Student-performance-dlt-pipeline
 
-**End-to-end ETL pipeline on the Student Performance dataset using Databricks Delta Live Tables (DLT), built on the Medallion Architecture (Bronze → Silver → Gold).**
+**End-to-end ELT pipeline on the Student Performance dataset using Databricks Delta Live Tables (DLT), built on the Medallion Architecture (Bronze → Silver → Gold).**
 
 ##  Architecture
 
